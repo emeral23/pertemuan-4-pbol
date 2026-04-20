@@ -1,0 +1,157 @@
+/* style.css */
+body {
+    background-color: #eef2f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.container, .container-result {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 550px;
+    border-top: 5px solid #007bff;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+input[type="text"], 
+input[type="email"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #f8f9fa;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    outline: none;
+    background-color: #fff;
+}
+
+/* Checkbox & Radio Styling */
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 15px;
+    padding: 5px 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Button Styling */
+.btn-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+    flex: 1;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.btn-simpan {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-simpan:hover {
+    background-color: #0069d9;
+}
+
+.btn-reset {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #5a6268;
+}
+
+/* Table Styling for Result */
+.table-hasil {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.table-hasil td {
+    padding: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table-hasil td:first-child {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    width: 35%;
+    color: #495057;
+}
+
+.table-hasil tr:last-child td {
+    border-bottom: none;
+}
+
+/* Loop Styling */
+.loop-container {
+    background: #f1f3f5;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.loop-container p {
+    margin: 8px 0;
+    border-bottom: 1px dashed #ced4da;
+    padding-bottom: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dee2e6;
+    margin: 30px 0;
+}
